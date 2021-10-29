@@ -24,7 +24,7 @@ const Artists = (props) => {
     useEffect(() => {
         const fetchPosts = async () => {
             setLoading(true);
-            const res = await fetch('http://localhost:8000/api/artists');
+            const res = await fetch('https://wasiback.herokuapp.com/api/artists');
             const json=await res.json();
             setArtists(json);
             setLoading(false);

@@ -26,7 +26,7 @@ const Category1Products = (props) => {
     useEffect(() => {
         const fetchPosts = async () => {
             setLoading(true);
-            const res = await fetch("http://localhost:8000/api/category1/"+id+"/products");
+            const res = await fetch("https://wasiback.herokuapp.com/api/category1/"+id+"/products");
             const json=await res.json();
             setProducts(json);
             setLoading(false);

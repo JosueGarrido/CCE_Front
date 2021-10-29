@@ -56,7 +56,7 @@ const Category2Products = (props) => {
                                                         <Col span={14}>
                                                             <Meta
                                                                 avatar={<Avatar size={150}
-                                                                                src={`http://localhost:8000/storage/${product.image}`}/>}
+                                                                                src={`https://wasiback.herokuapp.com/storage/${product.image}`}/>}
                                                                 title={`Autor: ${product.name}`}
                                                                 description={`Descripción: ${product.description}
                                             `}
