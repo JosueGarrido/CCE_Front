@@ -462,7 +462,8 @@ const Publications = ( {
                                     >
                                         {
                                             categories4 && categories4.map( ( category4, index ) =>
-                                                <Option value={ category4.id } key={ index }>{` ${ category4.name } `}</Option>
+                                                <Option value={ category4.id } key={ index }>{` ${ category4.name } `}</Option>,
+                                                <Option >Prueba</Option>
                                             )
                                         }
 

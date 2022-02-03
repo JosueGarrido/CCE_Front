@@ -385,7 +385,7 @@ const Register = () => {
         data.append( 'country', userData.country );
         data.append( 'province', userData.province );
         data.append( 'city', userData.city );
-        data.append( 'town', userData.town );
+        data.append( 'location', userData.location );
         data.append('live',userData.live)
         data.append( 'culture', userData.culture );
         data.append( 'disability', userData.disability === true ? 1 : 0);
@@ -613,7 +613,7 @@ const Register = () => {
                                             multiple={ false }
                                             showUploadList={ false }
                                             beforeUpload={ () => false }
-                                        // onChange={ handleChangePhoto }
+                                         // onChange={ handleChangePhoto }
                                             fileList={ fileList }
                                     >
                                         { imageUrl
@@ -715,7 +715,7 @@ const Register = () => {
                                 >
                                     {({ getFieldValue }) => {
                                         return getFieldValue('city') === currentCity ? (
-                                            <Form.Item name='town'
+                                            <Form.Item name='location'
                                                        label="Parroquia de domicilio"
                                                        initialValue={null}
                                                        rules={ [
